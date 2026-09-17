@@ -1,0 +1,6 @@
+{
+  "name": "GameNotes",
+  "description": "Smart notes and floating overlay assistant for gamers with Room persistence and Gemini AI",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

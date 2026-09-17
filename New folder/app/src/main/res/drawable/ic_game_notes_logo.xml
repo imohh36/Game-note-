@@ -1,0 +1,79 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="14"
+        android:translateY="14">
+        
+        <!-- Clipboard / Notepad Base -->
+        <path
+            android:fillColor="#1E293B"
+            android:pathData="M20,10 C16.7,10 14,12.7 14,16 L14,70 C14,73.3 16.7,76 20,76 L66,76 C69.3,76 72,73.3 72,70 L72,16 C72,12.7 69.3,10 66,10 Z" />
+
+        <!-- Notepad Inner Page -->
+        <path
+            android:fillColor="#0F172A"
+            android:pathData="M18,18 L68,18 C69.1,18 70,18.9 70,20 L70,68 C70,69.1 68.9,70 68,70 L18,70 C16.9,70 16,69.1 16,68 L16,20 C16,18.9 16.9,18 18,18 Z" />
+
+        <!-- Top Clip with Gold accent -->
+        <path
+            android:fillColor="#F59E0B"
+            android:pathData="M32,6 C32,4.9 32.9,4 34,4 L52,4 C53.1,4 54,4.9 54,6 L54,12 L32,12 Z" />
+
+        <!-- Checklist Lines inside Notepad -->
+        <path
+            android:fillColor="#10B981"
+            android:pathData="M24,26 L28,30 L36,22 L38,24 L28,34 L22,28 Z" />
+        <path
+            android:fillColor="#38BDF8"
+            android:pathData="M42,27 L64,27 L64,29 L42,29 Z" />
+
+        <path
+            android:fillColor="#10B981"
+            android:pathData="M24,40 L28,44 L36,36 L38,38 L28,48 L22,42 Z" />
+        <path
+            android:fillColor="#38BDF8"
+            android:pathData="M42,41 L64,41 L64,43 L42,43 Z" />
+
+        <!-- Modern Sleek Game Controller Overlayed across the bottom-right of the pad -->
+        <path
+            android:fillColor="#0284C7"
+            android:pathData="M30,52 C27,52 24,54.5 24,58 L20,72 C19,75.5 21.5,79 25,79 C27,79 29,78 30,76 L35,68 L53,68 L58,76 C59,78 61,79 63,79 C66.5,79 69,75.5 68,72 L64,58 C64,54.5 61,52 58,52 Z" />
+
+        <path
+            android:fillColor="#0369A1"
+            android:pathData="M31,54 C28.5,54 26,56.2 26,59 L22.5,71.5 C21.8,74 23.8,76.5 26.2,76.5 C27.5,76.5 28.8,75.8 29.5,74.5 L34.5,66.5 L53.5,66.5 L58.5,74.5 C59.2,75.8 60.5,76.5 61.8,76.5 C64.2,76.5 66.2,74 65.5,71.5 L62,59 C62,56.2 59.5,54 57,54 Z" />
+
+        <!-- Controller D-Pad (Left) -->
+        <path
+            android:fillColor="#F8FAFC"
+            android:pathData="M32,58 L35,58 L35,60 L37,60 L37,63 L35,63 L35,65 L32,65 L32,63 L30,63 L30,60 L32,60 Z" />
+
+        <!-- Controller Action Buttons (Right) -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M55,59 A1.8,1.8 0 1,0 55.01,59 Z" />
+        <path
+            android:fillColor="#34D399"
+            android:pathData="M55,64 A1.8,1.8 0 1,0 55.01,64 Z" />
+        <path
+            android:fillColor="#F87171"
+            android:pathData="M58,61.5 A1.8,1.8 0 1,0 58.01,61.5 Z" />
+        <path
+            android:fillColor="#60A5FA"
+            android:pathData="M52,61.5 A1.8,1.8 0 1,0 52.01,61.5 Z" />
+
+        <!-- Neon Stylus / Pen -->
+        <path
+            android:fillColor="#E2E8F0"
+            android:pathData="M65,8 L72,15 L70,17 L63,10 Z" />
+        <path
+            android:fillColor="#F59E0B"
+            android:pathData="M61,12 L68,19 L46,41 L39,34 Z" />
+        <path
+            android:fillColor="#0EA5E9"
+            android:pathData="M39,34 L46,41 L38,44 Z" />
+    </group>
+</vector>
