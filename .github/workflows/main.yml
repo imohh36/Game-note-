@@ -1,7 +1,7 @@
 name: Build Flutter APK
 
 on:
-  workflow_dispatch: # يتيح لك تشغيل البناء يدوياً متى شئت
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,15 +16,17 @@ jobs:
           channel: 'stable'
 
       - name: Get dependencies
-        working-directory: './New folder'
-        run: flutter pub get
+        run: |
+          cd "New folder"
+          flutter pub get
 
       - name: Build APK
-        working-directory: './New folder'
-        run: flutter build apk --release
+        run: |
+          cd "New folder"
+          flutter build apk --release
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: release-apk
-          path: './New folder/build/app/outputs/flutter-apk/app-release.apk'
+          path: "New folder/build/app/outputs/flutter-apk/app-release.apk"
