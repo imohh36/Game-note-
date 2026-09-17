@@ -22,6 +22,10 @@ jobs:
           touch .env.example
           touch .env
 
+      - name: Generate debug keystore
+        working-directory: 'New folder'
+        run: keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "C=US, O=Android, CN=Android Debug"
+
       - name: Build APK
         working-directory: 'New folder'
         run: gradle assembleDebug
