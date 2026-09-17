@@ -16,6 +16,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Create Env files
+        working-directory: 'New folder'
+        run: |
+          touch .env.example
+          touch .env
+
       - name: Build APK
         working-directory: 'New folder'
         run: gradle assembleDebug
