@@ -1,0 +1,30 @@
+name: Build Flutter APK
+
+on:
+  workflow_dispatch: # يتيح لك تشغيل البناء يدوياً متى شئت
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Get dependencies
+        working-directory: './New folder'
+        run: flutter pub get
+
+      - name: Build APK
+        working-directory: './New folder'
+        run: flutter build apk --release
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-apk
+          path: './New folder/build/app/outputs/flutter-apk/app-release.apk'
